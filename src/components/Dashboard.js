@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ChartistGraph from 'react-chartist'
 import Barchart from './Barchart'
 import Piechart from './Piechart'
 import '../App.css'
