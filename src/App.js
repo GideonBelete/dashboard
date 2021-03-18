@@ -1,10 +1,15 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Sidebar from './components/Sidebar'
-import Main from './components/Main'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Login from './components/login/Login'
+import Sidebar from './components/Sidebar';
+import Main from './components/Main';
+import './App.css';
 
-class App extends Component {
-  render() {
+function App() {
+    const [token, setToken] = useState();
+    if(!token) {
+      return <Login setToken={setToken} />
+    }
     return (
       <div className="wrapper">
         <Router>
@@ -13,7 +18,6 @@ class App extends Component {
         </Router>
       </div>
     )
-  }
 }
 
 export default App
