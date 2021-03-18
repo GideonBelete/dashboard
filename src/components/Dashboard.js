@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Barchart from './Barchart'
-import Piechart from './Piechart'
+import Barchart from './charts/Barchart'
+import Piechart from './charts/Piechart'
 import '../App.css'
-import Linechart from './Linechart'
+import Linechart from './charts/Linechart'
 
 class Dashboard extends Component {
   render() {

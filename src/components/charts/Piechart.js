@@ -1,17 +1,17 @@
 import React from 'react'
-import { Line } from 'react-chartjs-2'
-import '../App.css'
+import { Pie } from 'react-chartjs-2'
+import '../../App.css'
 
-function Linechart() {
+function Piechart() {
   return (
-    <div className="linechart">
-      <p>Basic Line Chart</p>
-      <Line
+    <div className="piechart">
+      <p>Basic Pie Chart</p>
+      <Pie
         data={{
           labels: ['value one', 'value two', 'value three'],
           datasets: [{
             data: [5, 2, 10],
-            label: 'Value',
+            labels: 'Pie Segments',
             backgroundColor: [
               'rgba(37,101,92, 0.2)',
               'rgba(62,168,154, 0.2)',
@@ -19,7 +19,7 @@ function Linechart() {
             ]
           }]
         }}
-        height={200}
+        height={250}
         width={300}
         options={{
           maintainAspectRatio: false,
@@ -38,4 +38,4 @@ function Linechart() {
   )
 }
 
-export default Linechart
+export default Piechart
