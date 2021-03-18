@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.barchart {
+  width: 60%;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  -webkit-box-shadow: 15px 12px 18px -6px rgba(0,0,0,0.33);
+  box-shadow: 15px 12px 18px -6px rgba(0,0,0,0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.barchart p {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.piechart {
+  width: 40%;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  -webkit-box-shadow: 15px 12px 18px -6px rgba(0,0,0,0.33);
+  box-shadow: 15px 12px 18px -6px rgba(0,0,0,0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.piechart p {
+  margin: 0;
+  padding: 0;
+}
+
+.linechart {
+  width: 96%;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  -webkit-box-shadow: 15px 12px 18px -6px rgba(0,0,0,0.33);
+  box-shadow: 15px 12px 18px -6px rgba(0,0,0,0.1);
+}
+
+.linechart p {
+  margin: 0;
+  padding: 0;
+}
+
+.dashWrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashContainer {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
