@@ -1,12 +1,12 @@
 import React from 'react'
-import { Line } from 'react-chartjs-2'
+import { Doughnut } from 'react-chartjs-2'
 import '../../App.css'
 
-function Linechart() {
+function Doughnutchart() {
   return (
-    <div className="linechart">
-      <p>Basic Line Chart</p>
-      <Line
+    <div className="doughnutchart">
+      <p>Basic Doughnut Chart</p>
+      <Doughnut
         data={{
           labels: ['value one', 'value two', 'value three'],
           datasets: [{
@@ -38,4 +38,4 @@ function Linechart() {
   )
 }
 
-export default Linechart
+export default Doughnutchart

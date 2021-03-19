@@ -1,12 +1,12 @@
 import React from 'react'
-import { Line } from 'react-chartjs-2'
+import { Polar } from 'react-chartjs-2'
 import '../../App.css'
 
-function Linechart() {
+function Polarchart() {
   return (
-    <div className="linechart">
-      <p>Basic Line Chart</p>
-      <Line
+    <div className="polarchart">
+      <p>Basic Polar Chart</p>
+      <Polar
         data={{
           labels: ['value one', 'value two', 'value three'],
           datasets: [{
@@ -20,7 +20,7 @@ function Linechart() {
           }]
         }}
         height={200}
-        width={600}
+        width={300}
         options={{
           maintainAspectRatio: false,
           scales: {
@@ -38,4 +38,4 @@ function Linechart() {
   )
 }
 
-export default Linechart
+export default Polarchart

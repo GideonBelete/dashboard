@@ -3,6 +3,8 @@ import Barchart from './charts/Barchart'
 import Piechart from './charts/Piechart'
 import '../App.css'
 import Linechart from './charts/Linechart'
+import Polarchart from './charts/Polarchart'
+import Doughnutchart from './charts/Doughnutchart'
 
 class Dashboard extends Component {
   render() {
@@ -12,7 +14,13 @@ class Dashboard extends Component {
           <Barchart />
           <Piechart />
         </div>
-        <Linechart />
+        <div className="dashContainer">
+          <Linechart />
+        </div>
+        <div className="dashContainer">
+          <Polarchart />
+          <Doughnutchart />
+        </div>
       </div>
     )
   }

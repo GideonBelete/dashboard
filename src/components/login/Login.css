@@ -10,6 +10,15 @@ form {
   width: 100%;
 }
 
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
 .image-wrapper {
   width: 50%;
   height: 100vh;
@@ -17,7 +26,7 @@ form {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  border-bottom-right-radius: 15rem;
+  animation: animatedBackground 60s linear infinite alternate;
 }
 
 .content-wrapper {
