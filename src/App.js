@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './components/login/Login'
+import React from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+/* import Login from './components/login/Login' */
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import './App.css';
