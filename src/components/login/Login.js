@@ -27,23 +27,34 @@ export default function Login({setToken}) {
   }
   return (
     <div className="login-wrapper">
-      <div className="form-wrapper">
-        <h1>Welcome</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="form-fields">
-            <label>
-              <p>Username</p>
-              <input type="text" onChange={e => setUserName(e.target.value)}/>
-            </label>
-            <label>
-              <p>Password</p>
-              <input type="password" onChange={e => setPassword(e.target.value)}/>
-            </label>
+      <div className="image-wrapper">
+
+      </div>
+      <div className="content-wrapper">
+        <div className="form-wrapper">
+          <div className="login-text">
+            <h1>Welcome.</h1>
+            <h4>Sign in below to access the dashboard</h4>
           </div>
-          <div>
-            <button type="submit">Login</button>
-          </div>
-        </form>
+          <form onSubmit={handleSubmit}>
+            <div className="form-fields">
+              <label>
+                <p>Username</p>
+                <input type="text" onChange={e => setUserName(e.target.value)}/>
+              </label>
+              <label>
+                <p>Password</p>
+                <input type="password" onChange={e => setPassword(e.target.value)}/>
+              </label>
+            </div>
+            <div>
+              <button type="submit">Login</button>
+              <div className="request">
+                <p>Missing your credentials? Request access <a href="#">here</a> from an administrator</p>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   )

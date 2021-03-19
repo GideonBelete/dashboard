@@ -21,7 +21,7 @@ class Sidebar extends Component {
             <li className="nav-item">
               <NavLink className="nav-link" to='/profile'>
                 <i className="nc-icon nc-circle-09"></i>
-                <p>Company Profile</p>
+                <p>Profile</p>
               </NavLink>
             </li>
             <li className="nav-item">
